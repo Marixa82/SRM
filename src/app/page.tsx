@@ -1,6 +1,6 @@
 
 import StatusLabel, {Status} from "./components/status-label";
-// import NotActiveLabel from "./components/not-active-label";
+
 
 export default function Home() {
   return (
