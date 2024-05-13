@@ -16,7 +16,8 @@ export interface StatusLabelProps {
 }
 
 export default function StatusLabel({ children, status, disabled }: StatusLabelProps) {
-  return <div
+  // console.log(process.env.CRM_SECRET_KEY)
+  return (<div
     className={clsx('inline-flex items-center py-1 px-3.5 rounded-3xl text-sm font-medium' ,
      status === Status.Active && 'text-green-700 bg-green-100 ' ,
       status === Status.NotActive && 'text-red-700 bg-red-100 ' ,
@@ -27,5 +28,6 @@ export default function StatusLabel({ children, status, disabled }: StatusLabelP
       },
       )}>
     <div className='w-1 h-1 rounded-full bg-current '/>
-    {children}</div>;
+    {children}
+  </div>)
 }
