@@ -1,7 +1,8 @@
 
-import { headers } from "next/headers";
+// import { headers } from "next/headers";
 // import StatusLabel, {Status} from "./components/status-label";
-import AddCompanyButton from "./components/add-company-button";
+import AddCompanyButton from '@/app/components/add-company-button';
+import MagicButton from '@/app/components/magic-button';
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <main>
       <h1 className="text-xl">Home page</h1> 
       <AddCompanyButton/>
+      <MagicButton/>
     </main>
   );
 }
